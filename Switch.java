@@ -2,16 +2,16 @@ import java.util.Scanner;
 
 public class Switch {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter the first number: ");
-        int num1 = scanner.nextInt();
+        int num1 = sc.nextInt();
 
         System.out.print("Enter the second number: ");
-        int num2 = scanner.nextInt();
+        int num2 = sc.nextInt();
 
         System.out.print("Enter the operation (+ for addition, - for subtraction): ");
-        char operation = scanner.next().charAt(0);
+        char operation = sc.next().charAt(0);
 
         int result;
 
@@ -28,6 +28,6 @@ public class Switch {
                 System.out.println("Invalid operation!");
         }
 
-        scanner.close();
+        sc.close();
     }
 }
